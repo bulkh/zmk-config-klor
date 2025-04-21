@@ -1,4 +1,4 @@
-if SHIELD_KLOR_DONGLE
+if SHIELD_KLOR_LEFT
 
     config ZMK_KEYBOARD_NAME
         default "KLOR"
@@ -9,11 +9,11 @@ if SHIELD_KLOR_DONGLE
     config ZMK_USB
 	default y
 
-endif # Dongle
+endif # LEFT Dongle
 
 
 
-if SHIELD_KLOR_LEFT || SHIELD_KLOR_RIGHT || SHIELD_KLOR_DONGLE
+if SHIELD_KLOR_LEFT || SHIELD_KLOR_RIGHT # SHIELD_KLOR_DONGLE
 
     config ZMK_SPLIT
         default y
